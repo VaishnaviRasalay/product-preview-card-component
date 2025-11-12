@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color: hsl(30, 38%, 92%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width:500px;
+    height:500px;
+    background-color:white ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.left-img{
+    width:50%;
+    background-image: url(images/image-product-desktop.jpg);
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+    .right {
+  width: 50%;
+  padding: 25px;
+ display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content from top */
+    gap: 10px; 
+}
+
+
+.type{
+    color:  hsl(30, 38%, 92%);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 250px;
+    margin-left: 10px;
+}
+h1 {
+  font-size: 22px;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 15px;
+  font-family: 'Fraunces', serif;
+  line-height: 1.2;
+  margin-top: -200px;
+}
+.descrption{
+    font-size: 14px;
+     color:hsl(228, 12%, 48%);
+     margin-bottom: 10px;
+}
+.cost{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+.price{
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+.strike{
+    margin-top: -22px;
+    margin-left: 90px;
+    color:hsl(158, 36%, 37%); 
+    text-decoration: line-through;
+}
+button img{
+    width:15px;
+    height:12px;
+    padding-right: 5px;
+}
+button{
+    background-color:hsl(158, 36%, 37%) ;
+    color: white;
+    padding:10px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 350px;
+    height: auto; /* let content decide height */
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .left-img {
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 280px; /* ✅ controls how much image shows */
+    width: 100%;
+  }
+
+  .right {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .type {
+    margin: 0;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 22px;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+  }
+
+  .descrption {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+  }
+
+  .cost {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .strike {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+  }
+
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  button img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width:768px){
+    .card{
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        width:100%;
+        padding: 10px 10px;
+       
+        
+    }
+    .left-img{
+        background-image: url(images/image-product-mobile.jpg);
+        object-fit: cover;
+       background-size: cover;
+    background-repeat: no-repeat;
+     height:250px; 
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+  .right {
+    padding: 20px;
+    font-size: medium;
+    
+
+  }
+
+  h1 {
+   margin: ;
+  
+  }
+  .descrption{
+    margin-top: -20px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+} */
